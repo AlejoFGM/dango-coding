@@ -32,7 +32,7 @@ const Card = ({
     setInputValue(newValue);
   };
 
-  const handleTitleClick = () => {
+  const handleEditClick = () => {
     setIsEditing(!isEditing);
   };
 
@@ -80,7 +80,7 @@ const Card = ({
         />
         <HiPencil
           className="cursor-pointer text-2xl text-gray-500"
-          onClick={handleTitleClick}
+          onClick={handleEditClick}
         />
       </div>
       <div className="mb-2 mt-2 flex flex-row">
