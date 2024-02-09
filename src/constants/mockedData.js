@@ -1,7 +1,7 @@
 export const cardsData = [
     {
       title: "Tourmaline Heritage Lavender Bar Soap",
-      image: 'src/assets/images/lavender.jpg',
+      image: '/assets/images/lavender.jpg',
       price: 24,
       amount: 1,
       description:
@@ -9,7 +9,7 @@ export const cardsData = [
     },
     {
       title: "Tourmaline Charcoal Detox Bar Soap",
-      image: 'src/assets/images/charcoal.jpg',
+      image: '/assets/images/charcoal.jpg',
       price: 24,
       amount: 1,
       description:
@@ -17,7 +17,7 @@ export const cardsData = [
     },
     {
       title: "Tourmaline Double Ginger-Lime Bar Soap",
-      image: 'src/assets/images/ginger-lime.jpg',
+      image: '/assets/images/ginger-lime.jpg',
       price: 24,
       amount: 1,
       description:
@@ -25,7 +25,7 @@ export const cardsData = [
     },
     {
       title: "Tourmaline Lemongrass Chai Bar Soap",
-      image: 'src/assets/images/lemongrass.jpg',
+      image: '/assets/images/lemongrass.jpg',
       price: 24,
       amount: 1,
       description:
@@ -33,7 +33,7 @@ export const cardsData = [
     },
     {
       title: "Tourmaline Black Pepper Zest Bar Soap",
-      image: 'src/assets/images/black-pepper.jpg',
+      image: '/assets/images/black-pepper.jpg',
       price: 24,
       amount: 1,
       description:
@@ -41,7 +41,7 @@ export const cardsData = [
     },
     {
       title: "Tourmaline Citrus Sunshine Scrub Bar Soap",
-      image: 'src/assets/images/citrus.jpg',
+      image: '/assets/images/citrus.jpg',
       price: 24,
       amount: 1,
       description:
@@ -49,7 +49,7 @@ export const cardsData = [
     },
     {
       title: "Tourmaline Cedarwood Purifier Bar Soap",
-      image: 'src/assets/images/cedarwood.jpg',
+      image: '/assets/images/cedarwood.jpg',
       price: 24,
       amount: 1,
       description:
