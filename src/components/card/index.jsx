@@ -12,10 +12,19 @@ const Card = ({
   image,
   onAmountChange,
 }) => {
+  const fontValues = [
+    "text-sm",
+    "text-base",
+    "text-lg",
+    "text-xl",
+    "text-2xl",
+    "text-3xl",
+  ];
+
   const [inputValue, setInputValue] = useState(amount);
   const [isEditing, setIsEditing] = useState(false);
   const [title, setTitle] = useState(initialTitle);
-  const [fontSize, setFontSize] = useState(18);
+  const [fontSize, setFontSize] = useState("text-xl");
 
   const handleInputChange = (e) => {
     const newValue = e.target.value ? parseInt(e.target.value, 10) : 0;
@@ -35,15 +44,12 @@ const Card = ({
     setIsEditing(false);
   };
 
-  const handleFontSizeChange = (e) => {
-    setFontSize(parseInt(e.target.value, 10));
+  const handleFontSizeChange = (value) => {
+    setFontSize(value);
   };
 
   return (
-    <div
-      style={{ minHeight: "550px" }}
-      className="flex w-64 flex-col justify-between rounded-md bg-white p-4 shadow-md"
-    >
+    <div className="flex w-64 flex-col justify-between rounded-md bg-white p-4 shadow-md">
       <div>
         <img src={image} alt={title} />
       </div>
@@ -59,8 +65,7 @@ const Card = ({
         ) : (
           <>
             <h2
-              className="font text mb-2 overflow-hidden break-words font-bold"
-              style={{ fontSize: `${fontSize}px` }}
+              className={`font text mb-2 overflow-hidden break-words font-bold ${fontSize}`}
             >
               {title}
             </h2>
@@ -68,7 +73,11 @@ const Card = ({
         )}
       </div>
       <div className="mb-2 mt-2 flex flex-row justify-between">
-        <RangeInput value={fontSize} onChange={handleFontSizeChange} />
+        <RangeInput
+          value={fontSize}
+          onChange={handleFontSizeChange}
+          fontValues={fontValues}
+        />
         <HiPencil
           className="cursor-pointer text-2xl text-gray-500"
           onClick={handleTitleClick}
